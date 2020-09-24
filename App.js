@@ -1,5 +1,6 @@
 import Amplify from 'aws-amplify'
 import config from './aws-exports'
+import { withAuthenticator } from 'aws-amplify-react-native'
 Amplify.configure(config)
 
 import { StatusBar } from 'expo-status-bar';
@@ -99,4 +100,4 @@ const styles = StyleSheet.create({
     todoName: { fontSize: 18 }
 })
 
-export default App
+export default withAuthenticator(App)
