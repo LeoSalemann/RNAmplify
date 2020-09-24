@@ -3,8 +3,6 @@ import config from './aws-exports'
 Amplify.configure(config)
 
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
 import React, { useEffect, useState } from 'react'
 import {
@@ -15,23 +13,23 @@ import { API, graphqlOperation } from 'aws-amplify'
 import { createTodo } from './src/graphql/mutations'
 import { listTodos } from './src/graphql/queries'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+//export default function App() {
+//  return (
+//    <View style={styles.container}>
+//      <Text>Open up App.js to start working on your app!</Text>
+//      <StatusBar style="auto" />
+//    </View>
+//  );
+//}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+//const styles = StyleSheet.create({
+//  container: {
+//    flex: 1,
+//    backgroundColor: '#fff',
+//    alignItems: 'center',
+//    justifyContent: 'center',
+//  },
+//});
 
 
 const initialState = { name: '', description: '' }
