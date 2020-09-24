@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\amplify",
+    "\\amplify\\backend\\api",
+    "\\amplify\\backend\\api\\myapi"
   ],
+  "SelectedNode": "\\amplify",
   "PreviewInSolutionExplorer": false
 }
